@@ -1,0 +1,209 @@
+body {
+  background: #181818;
+  color: #fff;
+}
+
+.mobile {
+  display: none;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0 0 0;
+  font: 18px 'Rubik';
+}
+
+.header .logo {
+  position: relative;
+  bottom: 15px;
+}
+
+.header .language .current-lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.header .language .current-lang .current-lang-text {
+  padding: 0 10px;
+}
+
+.header .language .container-langs {
+  position: absolute;
+  font-family: 'Gilroy-Medium';
+  padding: 0 30px 0 5px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 40px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.header .language .container-langs .lang-item {
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+  max-height: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .language .container-langs .lang-item .lang-text {
+  padding: 5px;
+}
+
+.header .lang-active .container-langs {
+  padding: 10px 30px 0 5px;
+}
+
+.header .lang-active .container-langs .lang-item {
+  max-height: 50px;
+}
+
+.header .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 0 100px;
+}
+
+.header .nav-links .nav-link {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 20px;
+}
+
+.header .tel {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.header .tel .tel-num {
+  margin: 0 10px;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header .nav-links {
+    padding: 0;
+  }
+  .header .nav-links .nav-link {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .logo .burger {
+    background: #fff;
+    width: 29px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .logo .burger .burger_stripe-1 {
+    background: -webkit-gradient(linear, right top, left top, from(#D6D6D6), to(#949494));
+    background: linear-gradient(to left, #D6D6D6 0%, #949494 100%);
+    height: 5px;
+    width: 50%;
+  }
+  .header .logo .burger .burger_stripe-2 {
+    background: -webkit-gradient(linear, right top, left top, from(#D6D6D6), to(#949494));
+    background: linear-gradient(to left, #D6D6D6 0%, #949494 100%);
+    height: 5px;
+  }
+  .header .logo .burger .burger_stripe-3 {
+    background: -webkit-gradient(linear, right top, left top, from(#D6D6D6), to(#949494));
+    background: linear-gradient(to left, #D6D6D6 0%, #949494 100%);
+    height: 5px;
+  }
+  .header .language .current-lang {
+    display: none;
+  }
+  .header .nav-links {
+    display: none;
+  }
+  .header .tel {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url(../Fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url(../Fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url(../Fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy-Semibold';
+  src: url(../Fonts/Gilroy-Semibold.ttf);
+}
+
+@font-face {
+  font-family: 'SFProText-Regular';
+  src: url(../Fonts/SFProText-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'SFProText-Semibold';
+  src: url(../Fonts/SFProText-Semibold.ttf);
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(../Fonts/Rubik.ttf);
+}
+/*# sourceMappingURL=style.css.map */
