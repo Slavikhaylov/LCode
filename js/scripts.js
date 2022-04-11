@@ -9,3 +9,7 @@ document.addEventListener('click' , function(e){
     
 
 })
+
+setTimeout(() => {
+    
+}, timeout);
