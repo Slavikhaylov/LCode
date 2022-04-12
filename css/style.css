@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -51,7 +51,7 @@ body {
   padding: 0 30px 0 5px;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.8);
-  margin-top: 40px;
+  margin-top: 25px;
   -webkit-transition: .5s;
   transition: .5s;
   background: rgba(255, 255, 255, 0.4);
@@ -158,16 +158,64 @@ body {
   opacity: .87;
 }
 
+.more-hover-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #69E4A3 0%, #D2E66A 56.25%, #FDE753 100%);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.more-hover-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(100% 100% at 0% 50%, rgba(235, 38, 72, 0.2) 0%, rgba(249, 248, 113, 0.2) 100%), -webkit-gradient(linear, left top, left bottom, from(#D268CE), to(#A854D4));
+  background: radial-gradient(100% 100% at 0% 50%, rgba(235, 38, 72, 0.2) 0%, rgba(249, 248, 113, 0.2) 100%), linear-gradient(180deg, #D268CE 0%, #A854D4 100%);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.more-text {
+  background: #181818;
+  position: relative;
+  padding: 5px 30px;
+}
+
 .more {
   background: #181818;
   margin-top: 50px;
-  padding: 5px 30px;
   border: 1px solid #ABABAB;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
   cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.more:hover {
+  border: 1px solid #181818;
+}
+
+.more:hover .more-hover-1 {
+  top: -5px;
+  left: -5px;
+  right: 2px;
+  bottom: 2px;
+}
+
+.more:hover .more-hover-2 {
+  bottom: -5px;
+  right: -5px;
+  left: 2px;
+  top: 2px;
 }
 
 .main-img-container {
@@ -208,7 +256,7 @@ body {
 .our-business {
   overflow: hidden;
   position: absolute;
-  left: 8%;
+  left: 5%;
   right: 0;
   bottom: 0;
   display: -webkit-box;
@@ -244,6 +292,309 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
+}
+
+.social {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.social-ic {
+  margin: 30px;
+}
+
+#why-us {
+  position: relative;
+  background: url(../img/stripes.png) no-repeat right;
+  background-size: 60%;
+}
+
+.why-us_img {
+  padding: 100px 0;
+  width: 40%;
+}
+
+.why-us {
+  -webkit-box-shadow: 20px 10px 27px rgba(0, 0, 0, 0.6), inset 1px 1px 1px rgba(156, 156, 156, 0.5);
+          box-shadow: 20px 10px 27px rgba(0, 0, 0, 0.6), inset 1px 1px 1px rgba(156, 156, 156, 0.5);
+  padding: 20px 20px 30px 30px;
+  top: 200px;
+  right: 200px;
+  position: absolute;
+  background: url(../img/why-us-bg.png) no-repeat right, radial-gradient(101.02% 101.02% at 1.2% 0%, #393939 1.04%, #000000 100%);
+  background-size: 50% , auto;
+  width: 50%;
+}
+
+.why-us_title {
+  font-family: 'Gilroy-Bold';
+  font-size: 35px;
+}
+
+.why-us_blocks {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.why-us_block-1, .why-us_block-2, .why-us_block-3 {
+  padding-right: 30px;
+}
+
+.why-us_text {
+  opacity: .7;
+  margin-top: 10px;
+  line-height: 25px;
+  font-family: 'Gilroy-Semibold';
+}
+
+.why-us_block-2 {
+  margin-top: 40px;
+}
+
+.why-us_block-3 {
+  margin-top: 100px;
+}
+
+#our-service {
+  padding-bottom: 150px;
+  background: url(../img/gradient-stripes.svg) no-repeat;
+  background-size: 100%;
+}
+
+.our-service_title, .our-sites_title, .our-team_title, .portfolio-title {
+  font-family: "Gilroy-Regular";
+  font-size: 35px;
+  line-height: 42px;
+}
+
+.our-service {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-service_item:nth-child(even) {
+  margin-top: 100px;
+}
+
+.our-service_item, .our-sites_item {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  margin-right: 40px;
+  background: radial-gradient(101.02% 101.02% at 1.2% 0%, #393939 1.04%, #000000 100%);
+  -webkit-box-shadow: inset 1px 1px 1px rgba(156, 156, 156, 0.5);
+          box-shadow: inset 1px 1px 1px rgba(156, 156, 156, 0.5);
+}
+
+.our-service_item hr, .our-sites_item hr {
+  border: 0;
+  border-top: 1px solid #828282;
+  margin: 20px 0;
+}
+
+.our-service_item-title {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 20px 0;
+}
+
+.our-service_item-text {
+  width: 70%;
+  font-family: "Gilroy-Regular";
+  opacity: .7;
+}
+
+.profession {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 3px 0;
+  opacity: .87;
+}
+
+#our-sites {
+  background: url(../img/gradient-stripes.svg) no-repeat;
+  background-size: 100%;
+  padding-bottom: 150px;
+}
+
+.our-sites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: right;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.our-sites_item {
+  width: 30%;
+  margin: 20px 20px 20px 0;
+}
+
+.our-sites_item-title {
+  width: 70%;
+  margin: 10px 0;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.our-sites_item-text {
+  font-family: 'Gilroy-Regular';
+  opacity: .8;
+}
+
+.our-team_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.our-team_item {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #181818), to(#2C2C2C));
+  background: linear-gradient(180deg, #181818 10%, #2C2C2C 100%);
+  margin: 0 20px 0 0;
+}
+
+.our-team_item:nth-child(even) {
+  position: relative;
+  top: 100px;
+}
+
+.our-team_name {
+  font-family: "Gilroy-Semibold";
+  text-align: center;
+}
+
+.position {
+  font-family: "Gilroy-Regular";
+  text-align: center;
+  opacity: .8;
+}
+
+#portfolio {
+  margin-top: 200px;
+}
+
+.between-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio-title-text {
+  width: 40%;
+  font-family: 'Gilroy-Regular';
+  line-height: 25px;
+  opacity: .7;
+}
+
+.portfolio-sites {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.left-side, .right-side {
+  width: 50%;
+}
+
+.logotype {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-family: "Gilroy-Medium";
+}
+
+.portfolio_img-title {
+  font-family: "Gilroy-Bold";
+  font-size: 23px;
+}
+
+.portfolio-img_text-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+  padding: 30px 0 10px 15px;
+}
+
+.portfolio_img-text {
+  font-family: "Gilroy-Medium";
+  line-height: 25px;
+  width: 90%;
+}
+
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8 {
+  position: relative;
+  border: 1px solid #000000;
+  overflow: hidden;
+}
+
+.img-1:hover .portfolio-img_text-content, .img-2:hover .portfolio-img_text-content, .img-3:hover .portfolio-img_text-content, .img-4:hover .portfolio-img_text-content, .img-5:hover .portfolio-img_text-content, .img-6:hover .portfolio-img_text-content, .img-7:hover .portfolio-img_text-content, .img-8:hover .portfolio-img_text-content {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.747)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0));
+  opacity: 1;
+}
+
+.img-1:hover img, .img-2:hover img, .img-3:hover img, .img-4:hover img, .img-5:hover img, .img-6:hover img, .img-7:hover img, .img-8:hover img {
+  -webkit-transform: scale(1.3) translateY(-30px);
+          transform: scale(1.3) translateY(-30px);
+}
+
+.img-1 img, .img-2 img, .img-3 img, .img-4 img, .img-5 img, .img-6 img, .img-7 img, .img-8 img {
+  position: relative;
+  z-index: -1;
+  -webkit-transition: .2s;
+  transition: .2s;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1600px) {
