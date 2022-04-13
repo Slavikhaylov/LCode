@@ -360,7 +360,7 @@ $lime: linear-gradient(135deg, #69E4A3 0%, #D2E66A 56.25%, #FDE753 100%) ;
 
 }
 
-.our-service_title ,.our-sites_title , .our-team_title , .portfolio-title{
+.our-service_title ,.our-sites_title , .our-team_title , .portfolio-title,.form-contacts-title{
     font-family: "Gilroy-Regular";
     font-size: 35px;
     line-height: 42px;
@@ -520,9 +520,7 @@ $lime: linear-gradient(135deg, #69E4A3 0%, #D2E66A 56.25%, #FDE753 100%) ;
 .left-side,.right-side {
     width: 50%;
 }
-.img-1 {
 
-}
 .logotype {
     position: absolute;
     top: 10px;
@@ -549,24 +547,9 @@ $lime: linear-gradient(135deg, #69E4A3 0%, #D2E66A 56.25%, #FDE753 100%) ;
     line-height: 25px;
     width: 90%;
 }
-.img-2 {
-}
-.img-3 {
-}
-.img-4 {
-}
-.right-side {
-}
-.img-8 {
-}
-.img-7 {
-}
-.img-6 {
-}
-.img-5 {
-}
 
-.img-1,.img-2,.img-3,.img-4,.img-5,.img-6,.img-7,.img-8{
+
+.partfolio_img{
     position: relative;
     border: 1px solid #000000;
     overflow: hidden;
@@ -596,13 +579,231 @@ $lime: linear-gradient(135deg, #69E4A3 0%, #D2E66A 56.25%, #FDE753 100%) ;
 
 }
 
+#contacts {
+    margin: 100px auto;
+
+}
+.contacts {
+    display: flex;
+    // flex-direction: row;
+
+}
+.form {
+    width: 40%;
+    padding: 10px 20px 10px 0;
+
+    hr{
+        border: none;
+        border-top: 1px solid #6A6A6A;
+        margin-bottom: 60px;
+    }
+}
+
+#name, #comment,#phone{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Gilroy-Regular";
+    font-size: 20px;
+
+}
+#name::placeholder, #comment::placeholder,#phone::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Gilroy-Regular";
+    font-size: 20px;
+}
+
+.street{
+    display: flex;
+    width: 50%;
+}
+.form-contacts-title {
+}
+.form-contacts-text {
+    font-family: "Gilroy-Regular ";
+    font-size: 22px;
+    margin: 30px 0;
+    opacity: .9;
+
+}
+.more button {
+    color: #fff;
+    border: none;
+}
+
+.map {
+    height: 100%;
+    width: 480px;
+
+}
+.place {
+  
+}
+.connection {
+    // opacity: .87;
+    
+    background-color: #181818;
+    hr{
+        border: none;
+        border-top: 1px solid #6A6A6A;
+    }
+}
+.city {
+}
+.street{
+    position: relative;
+    padding: 100px 0 50px 0;
+    
+}
+.purple{
+    z-index: -1;
+    background: #A854D4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+}
+.city, .telephone,.internet{
+    padding: 10px;
+
+    font-family: "Gilroy-Regular";
+    opacity: .87;
+  
+
+}
+.contact-ic {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+.form-contact-text {
+    font-family: "Gilroy-Semibold";
+    font-size: 22px;
+}
+.telephone ,.internet{
+    display: flex;
+    flex-direction: column;
+
+}
+.number {
+    border-bottom: 1px solid #fff;
+    width: fit-content;
+}
+.internet {
+
+}
+.social-href {
+    width: fit-content;
+   
+    border-bottom: 1px solid #fff;
+}
 
 
+footer{
+    background: radial-gradient(101.02% 101.02% at 1.2% 0%, #3E3E3E 1.04%, #000000 100%);
+    padding: 20px;
+    
+
+}
+
+.footer {
+    justify-content: space-between;
+    display: flex;
+
+}
+.logo-footer {
+    font-family: "Gilroy-Regular";
+    font-size: 15px;
+    opacity: .8;
+
+}
+.footer-links {
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    
+}
+.footer-link {
+   margin: 0 25px 0 25px;
+    height: fit-content;
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    opacity: .68;
+    transition: .3s;
+    &:hover{
+        opacity: 1;
+    }
+}
+.designed {
+    font-family: "Gilroy-Regular";
+    opacity: .8;
+
+    position: absolute;
+    right: 0 ;
+    bottom: 0;
+}
+.mailing {
+    width: 300px;
+    // display: inline-flex;
+    display: flex;
+    flex-direction: column;
+
+}
+.mailing-title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+.mailing-text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    opacity: .68;
+    margin: 20px 0;
+}
+.mailing-input {
+    background: #444444;
+    border: 0.5px solid #B8B8B8;
+    box-sizing: border-box;
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px;    
+    color: #fff;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+.mailing-input::placeholder{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
 
 
+}
 
+.mailing-button {
+    background: linear-gradient(135deg, #69E4A3 0%, #D2E66A 56.25%, #FDE753 100%);
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
 
-
+.mailing-block{
+    display: flex;
+}
 
 
 
