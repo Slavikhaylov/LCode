@@ -10,6 +10,37 @@ document.addEventListener('click' , function(e){
 
 })
 
-setTimeout(() => {
-    
-}, timeout);
+
+const burger = document.querySelector('.burger-button'),
+    header = document.querySelector('header')
+
+burger.addEventListener('click' , function(e){
+    header.classList.toggle('active')
+}  )
+
+
+if(window.innerWidth < 1300){
+    new Swiper('.portfolio-sites',{
+
+
+    }) 
+    new Swiper('.swiper-team',{
+        navigation:{
+            nextEl:'.next-team',
+            prevEl: '.prev-team'
+        },
+
+
+    }) 
+    new Swiper('.our-business-swiper',{
+        // navigation:{
+        //     nextEl:'.next-team',
+        //     prevEl: '.prev-team'
+        // },
+
+
+    }) 
+
+
+}
+
