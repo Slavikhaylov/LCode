@@ -21,23 +21,31 @@ burger.addEventListener('click' , function(e){
 
 if(window.innerWidth < 1300){
     new Swiper('.portfolio-sites',{
+        navigation:{
+            nextEl:'.project-next',
+            prevEl: '.project-prev'
+        },
+        pagination:{
+            el:'.project-pagination',
+            clickable: true,
+        }
 
 
     }) 
     new Swiper('.swiper-team',{
         navigation:{
-            nextEl:'.next-team',
-            prevEl: '.prev-team'
+            nextEl:'.team-next',
+            prevEl: '.team-prev'
         },
 
 
     }) 
     new Swiper('.our-business-swiper',{
-        // navigation:{
-        //     nextEl:'.next-team',
-        //     prevEl: '.prev-team'
-        // },
-
+        pagination:{
+            el:'.our-business-pagination',
+            clickable: true,
+        }
+     
 
     }) 
 

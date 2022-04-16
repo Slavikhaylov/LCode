@@ -548,7 +548,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 20px;
+  padding: 30px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #181818), to(#2C2C2C));
   background: linear-gradient(180deg, #181818 10%, #2C2C2C 100%);
   margin: 0 20px 0 0;
@@ -981,6 +981,31 @@ footer {
   display: flex;
 }
 
+.team-next, .project-next {
+  display: none;
+}
+
+.team-prev, .project-prev {
+  display: none;
+}
+
+.swiper-button-disabled {
+  opacity: .5;
+}
+
+.left {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.project-pagination {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  display: none;
+}
+
 @media (max-width: 1450px) {
   .social {
     display: none;
@@ -1081,6 +1106,7 @@ footer {
   .our-business-container {
     padding: 10px;
     width: 100%;
+    padding-bottom: 30px;
   }
   .our-business_img {
     display: none;
@@ -1142,7 +1168,7 @@ footer {
     line-height: 42px;
   }
   .our-service_item-text {
-    width: 300px;
+    max-width: 300px;
   }
   .our-service_item {
     width: -webkit-fit-content;
@@ -1384,7 +1410,7 @@ footer {
     overflow: hidden;
     margin: 0% auto;
     height: 100%;
-    width: 360px;
+    max-width: 340px;
   }
   .slider-width .portfolio-img_text-content {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.747)), to(rgba(0, 0, 0, 0)));
@@ -1535,6 +1561,46 @@ footer {
   header.active .language .container-langs .lang-item .lang-text {
     margin: 0 auto;
     padding: 5px;
+  }
+  .team-next, .project-next {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    z-index: 10;
+  }
+  .team-prev, .project-prev {
+    display: block;
+    z-index: 10;
+    position: absolute;
+    left: 10px;
+    top: 40%;
+  }
+  .swiper-button-disabled {
+    opacity: .5;
+  }
+  .left {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .our-business-pagination {
+    position: absolute !important;
+    left: 9px !important;
+  }
+  .project-pagination {
+    display: block;
+    right: 0 !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+  }
+  .swiper-pagination-bullet {
+    display: block;
+    background: rgba(255, 255, 255, 0.795) !important;
+    width: 30px !important;
+    border-radius: 2px !important;
+    height: 2px !important;
   }
 }
 
