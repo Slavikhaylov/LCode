@@ -1586,6 +1586,7 @@ footer {
   .our-business-pagination {
     position: absolute !important;
     left: 9px !important;
+    z-index: 10;
   }
   .project-pagination {
     display: block;
