@@ -6,7 +6,9 @@ body{
 $lime: linear-gradient(135deg, #69E4A3 0%, #D2E66A 56.25%, #FDE753 100%) ;
 
 
-
+.d-none{
+    display: none;
+}
 .mobile{
     display: none;
 }
@@ -902,7 +904,7 @@ footer{
 .mailing-button {
     background: linear-gradient(135deg, #69E4A3 0%, #D2E66A 56.25%, #FDE753 100%);
     border-radius: 0px 10px 10px 0px;
-    padding: 5px;
+    padding: 7px 8px 2px 8px;
     margin-left: 10px;
     height: fit-content;
     cursor: pointer;
@@ -1216,6 +1218,12 @@ footer{
         width: 100%;
         margin: 0 10px;
     }
+    
+.map {
+    height: 500px;
+    width: 95%;
+
+}
     .city, .telephone,.internet{
         padding: 10px;
         width:100%;
@@ -1325,7 +1333,7 @@ footer{
 .mailing-button {
     background: linear-gradient(135deg, #69E4A3 0%, #D2E66A 56.25%, #FDE753 100%);
     border-radius: 0px 10px 10px 0px;
-    padding: 5px;
+   
     margin-left: 10px;
     height: fit-content;
     cursor: pointer;
@@ -1405,9 +1413,11 @@ footer{
             display: flex;
             justify-content: space-between;
             .burger{
-                // animation: 1s burger;
+                background: url(../img/burger-1.svg);
+                z-index: 100;
+                position: relative;
                 width: 40px;
-                height: 25px;
+                height: 30px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between ;
@@ -1449,6 +1459,20 @@ footer{
         margin: 0;
         animation: burger 1s;
         animation-fill-mode: forwards;
+        .burger{
+            background: url(../img/burger-1.svg);
+            z-index: 100;
+            animation: burger-button 1s forwards;
+            position: relative;
+            width: 40px;
+            height: 35px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between ;
+            align-items: flex-end;
+        }
+     
  
 
 
@@ -1632,18 +1656,23 @@ footer{
 .our-service-animation-1{
     transform: translate(-120%, 0);
     transition: 1s;
+    transition-delay: .2s;
 }
+
 .our-service-animation-2{
     transform: translate(0 , 120%);
     transition: 1s;
+    transition-delay: .2s;
 }
 .our-service-animation-3{
     transform: translate(0 ,-120%);
     transition: 1s;
+    transition-delay: .2s;
 }
 .our-service-animation-4{
     transform: translate(120%, 0);
     transition: 1s;
+    transition-delay: .2s;
 }
 .active_1{
 
@@ -1656,6 +1685,9 @@ footer{
     0%{
         background: url(../img/mobile-animation-1.png) no-repeat;
         background-size: cover;
+        .burger-button{
+            background: url();
+        }
     }
     40%{
         background: url(../img/mobile-animation-2.png) no-repeat;
@@ -1670,6 +1702,25 @@ footer{
     100%{
         background: url(../img/mobile-animation-4.png) no-repeat;
         background-size: cover;
+      
+    }
+}
+@keyframes burger-button {
+    0%{
+        background: url(../img/burger-2.svg) no-repeat;
+        // background-size: cover;
+ 
+    }
+    40%{
+        background: url(../img/burger-3.svg) no-repeat;
+      
+    }
+    60%{
+        background: url(../img/burger-4.svg) no-repeat;
+      
+    }
+    100%{
+        background: url(../img/burger-5.svg) no-repeat;
       
     }
 }

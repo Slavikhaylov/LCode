@@ -3,6 +3,10 @@ body {
   color: #fff;
 }
 
+.d-none {
+  display: none;
+}
+
 .mobile {
   display: none;
 }
@@ -1006,7 +1010,7 @@ footer {
 .mailing-button {
   background: linear-gradient(135deg, #69E4A3 0%, #D2E66A 56.25%, #FDE753 100%);
   border-radius: 0px 10px 10px 0px;
-  padding: 5px;
+  padding: 7px 8px 2px 8px;
   margin-left: 10px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1295,6 +1299,10 @@ footer {
     width: 100%;
     margin: 0 10px;
   }
+  .map {
+    height: 500px;
+    width: 95%;
+  }
   .city, .telephone, .internet {
     padding: 10px;
     width: 100%;
@@ -1430,7 +1438,6 @@ footer {
   .mailing-button {
     background: linear-gradient(135deg, #69E4A3 0%, #D2E66A 56.25%, #FDE753 100%);
     border-radius: 0px 10px 10px 0px;
-    padding: 5px;
     margin-left: 10px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -1522,8 +1529,11 @@ footer {
             justify-content: space-between;
   }
   .header .mobile-logo .burger {
+    background: url(../img/burger-1.svg);
+    z-index: 100;
+    position: relative;
     width: 40px;
-    height: 25px;
+    height: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1578,6 +1588,28 @@ footer {
             animation: burger 1s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+  }
+  header.active .burger {
+    background: url(../img/burger-1.svg);
+    z-index: 100;
+    -webkit-animation: burger-button 1s forwards;
+            animation: burger-button 1s forwards;
+    position: relative;
+    width: 40px;
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   header.active .mobile {
     display: -webkit-box;
@@ -1736,6 +1768,8 @@ footer {
           transform: translate(-120%, 0);
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 .our-service-animation-2 {
@@ -1743,6 +1777,8 @@ footer {
           transform: translate(0, 120%);
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 .our-service-animation-3 {
@@ -1750,6 +1786,8 @@ footer {
           transform: translate(0, -120%);
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 .our-service-animation-4 {
@@ -1757,6 +1795,8 @@ footer {
           transform: translate(120%, 0);
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 .active_1 .our-service-animation-1, .active_1 .our-service-animation-2, .active_1 .our-service-animation-3, .active_1 .our-service-animation-4 {
@@ -1768,6 +1808,9 @@ footer {
   0% {
     background: url(../img/mobile-animation-1.png) no-repeat;
     background-size: cover;
+    .burger-button {
+      background: url();
+    }
   }
   40% {
     background: url(../img/mobile-animation-2.png) no-repeat;
@@ -1787,6 +1830,9 @@ footer {
   0% {
     background: url(../img/mobile-animation-1.png) no-repeat;
     background-size: cover;
+    .burger-button {
+      background: url();
+    }
   }
   40% {
     background: url(../img/mobile-animation-2.png) no-repeat;
@@ -1799,6 +1845,36 @@ footer {
   100% {
     background: url(../img/mobile-animation-4.png) no-repeat;
     background-size: cover;
+  }
+}
+
+@-webkit-keyframes burger-button {
+  0% {
+    background: url(../img/burger-2.svg) no-repeat;
+  }
+  40% {
+    background: url(../img/burger-3.svg) no-repeat;
+  }
+  60% {
+    background: url(../img/burger-4.svg) no-repeat;
+  }
+  100% {
+    background: url(../img/burger-5.svg) no-repeat;
+  }
+}
+
+@keyframes burger-button {
+  0% {
+    background: url(../img/burger-2.svg) no-repeat;
+  }
+  40% {
+    background: url(../img/burger-3.svg) no-repeat;
+  }
+  60% {
+    background: url(../img/burger-4.svg) no-repeat;
+  }
+  100% {
+    background: url(../img/burger-5.svg) no-repeat;
   }
 }
 /*# sourceMappingURL=style.css.map */

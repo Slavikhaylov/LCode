@@ -11,7 +11,7 @@ document.addEventListener('click' , function(e){
 })
 
 
-const burger = document.querySelector('.burger-button'),
+const burger = document.querySelector('.burger'),
     header = document.querySelector('header')
 
 burger.addEventListener('click' , function(e){
