@@ -147,6 +147,7 @@ header {
   width: 100%;
   height: 100vh;
   padding-top: 200px;
+  overflow: hidden;
 }
 
 @media (max-height: 900px) {
@@ -190,6 +191,7 @@ header {
 .about-us_title {
   font-size: 65px;
   font-family: 'Gilroy-bold';
+  margin-bottom: 10px;
 }
 
 .about-us_text {
@@ -274,11 +276,12 @@ header {
   width: 50%;
   left: -30px;
   right: 0;
-  top: 50%;
+  top: 40%;
   padding: 10px;
   line-height: 18px;
   -webkit-box-shadow: 0px 15px 39px #000000;
           box-shadow: 0px 15px 39px #000000;
+  font-family: "Gilroy-Regular";
 }
 
 .img-text-2 {
@@ -289,11 +292,12 @@ header {
           backdrop-filter: blur(15px);
   width: 50%;
   right: 0;
-  top: 20%;
+  top: 15%;
   line-height: 18px;
   padding: 10px;
   -webkit-box-shadow: 0px 15px 39px #000000;
           box-shadow: 0px 15px 39px #000000;
+  font-family: "Gilroy-Regular";
 }
 
 .our-business-swiper {
@@ -320,7 +324,7 @@ header {
 
 .our-business-container {
   padding: 30px 100px 30px 30px;
-  width: 400px;
+  width: 500px;
 }
 
 .our-business-title {
@@ -425,6 +429,7 @@ header {
   font-family: "Gilroy-Regular";
   font-size: 35px;
   line-height: 42px;
+  margin-bottom: 100px;
 }
 
 .our-service {
@@ -450,7 +455,18 @@ header {
 .our-service_item hr {
   border: 0;
   border-top: 1px solid #828282;
-  margin: 20px 0;
+  margin: 10px 0 20px 0;
+}
+
+.our-service-info {
+  color: #046AE2;
+  cursor: pointer;
+  line-height: 10px;
+}
+
+.our-service-info img {
+  position: relative;
+  top: 6px;
 }
 
 .our-sites_item {
@@ -576,13 +592,17 @@ header {
 }
 
 .our-team_item {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 30px;
+  height: 258.08px;
+  width: 282px;
+  padding: 0  30px 30px 30px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #181818), to(#2C2C2C));
   background: linear-gradient(180deg, #181818 10%, #2C2C2C 100%);
-  margin: 0 20px 0 0;
+  margin: 30px 20px 0 0;
+}
+
+.avatar {
+  width: 217.25px;
+  height: 172.57px;
 }
 
 .our-team_name {
@@ -769,7 +789,7 @@ header {
 }
 
 .form-contacts-text {
-  font-family: "Gilroy-Regular ";
+  font-family: "Gilroy-Semibold ";
   font-size: 22px;
   margin: 30px 0;
   opacity: .9;
@@ -1058,7 +1078,7 @@ footer {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 850px) {
   .portfolio-sites-2 {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -1086,6 +1106,160 @@ footer {
   }
   .header .nav-links .nav-link {
     margin: 0 10px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .container {
+    max-width: 1620px;
+  }
+  .our-business_img {
+    right: 150px;
+  }
+  .our-service_item-text {
+    width: 100%;
+  }
+  .why-us {
+    width: 844.75px;
+  }
+  .avatar {
+    width: 326.31px;
+    height: 224.36px;
+  }
+  .our-team_item {
+    width: 387px;
+    height: 338.24px;
+    margin: 0 0 30px 0;
+  }
+  .our-team_name {
+    font-size: 25px;
+  }
+  .position {
+    font-size: 20px;
+  }
+  .our-service_title, .our-sites_title, .our-team_title {
+    font-size: 40px;
+    margin-bottom: 100px;
+    position: relative;
+    text-align: center;
+  }
+  .our-service_title::after, .our-sites_title::after, .our-team_title::after {
+    content: "";
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    border-bottom: 1px solid #fff;
+  }
+  .portfolio-title, .form-contacts-title {
+    font-size: 40px;
+    margin-bottom: 100px;
+    position: relative;
+    text-align: center;
+  }
+  .why-us-container {
+    max-width: 1620px;
+    margin: 0 auto;
+  }
+  .our-sites_item-title {
+    width: 100%;
+  }
+  .img-text-1, .img-text-2 {
+    width: 70%;
+  }
+}
+
+.why-us_img-1024 {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin: 0 20px;
+  }
+  .about-us_text {
+    width: 100%;
+  }
+  .our-business-container {
+    width: 400px;
+    padding: 20px 35px 20px 20px;
+  }
+  .why-us_img {
+    display: none;
+  }
+  .why-us_img-1024 {
+    width: 100%;
+    height: 414px;
+    display: block;
+  }
+  .why-us-container {
+    margin: 0 20px;
+  }
+  .why-us_block-2, .why-us_block-3 {
+    margin-top: 0;
+  }
+  .why-us_blocks {
+    font-size: 15px;
+  }
+  .our-service_title, .our-sites_title, .our-team_title {
+    font-size: 25px;
+    margin: 50px 0 100px 0;
+    position: relative;
+    text-align: center;
+  }
+  .our-service_title::after, .our-sites_title::after, .our-team_title::after {
+    content: "";
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    border-bottom: 1px solid #fff;
+  }
+  .portfolio-title, .form-contacts-title {
+    font-size: 25px;
+    margin-bottom: 100px;
+    position: relative;
+    text-align: center;
+  }
+  .why-us {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+  }
+  .our-service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .our-service_item:nth-child(even) {
+    margin-top: 20px;
+  }
+  .our-service_item {
+    margin-top: 20px;
+    width: 45%;
+  }
+  .our-sites_item {
+    width: 45%;
+    margin: 12px;
+  }
+  .our-team_item-1024 {
+    display: none;
+  }
+  .our-team_container .swiper-slide {
+    width: 30%;
+  }
+  .our-team_container .swiper-slide:nth-child(even) {
+    position: relative;
+    top: 0;
   }
 }
 
@@ -1721,41 +1895,6 @@ footer {
   }
 }
 
-@font-face {
-  font-family: 'Gilroy-Bold';
-  src: url(../Fonts/Gilroy-Bold.ttf);
-}
-
-@font-face {
-  font-family: 'Gilroy-Medium';
-  src: url(../Fonts/Gilroy-Medium.ttf);
-}
-
-@font-face {
-  font-family: 'Gilroy-Regular';
-  src: url(../Fonts/Gilroy-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'Gilroy-Semibold';
-  src: url(../Fonts/Gilroy-Semibold.ttf);
-}
-
-@font-face {
-  font-family: 'SFProText-Regular';
-  src: url(../Fonts/SFProText-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'SFProText-Semibold';
-  src: url(../Fonts/SFProText-Semibold.ttf);
-}
-
-@font-face {
-  font-family: 'Rubik';
-  src: url(../Fonts/Rubik.ttf);
-}
-
 .our-service-animation-1, .our-service-animation-2, .our-service-animation-3, .our-service-animation-4 {
   background: radial-gradient(101.02% 101.02% at 1.2% 0%, #393939 1.04%, #000000 100%);
   padding: 20px;
@@ -1876,5 +2015,40 @@ footer {
   100% {
     background: url(../img/burger-5.svg) no-repeat;
   }
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url(../Fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url(../Fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url(../Fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy-Semibold';
+  src: url(../Fonts/Gilroy-Semibold.ttf);
+}
+
+@font-face {
+  font-family: 'SFProText-Regular';
+  src: url(../Fonts/SFProText-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'SFProText-Semibold';
+  src: url(../Fonts/SFProText-Semibold.ttf);
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url(../Fonts/Rubik.ttf);
 }
 /*# sourceMappingURL=style.css.map */

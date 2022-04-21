@@ -19,7 +19,7 @@ burger.addEventListener('click' , function(e){
 }  )
 
 
-if(window.innerWidth < 1300){
+if(window.innerWidth < 850){
     new Swiper('.portfolio-sites',{
         navigation:{
             nextEl:'.project-next',
