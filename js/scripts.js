@@ -118,10 +118,10 @@ var isScrolling = false;
 
     
     let portfolioSitesWrapper =  document.querySelector('.portfolio-sites-2')
-    portfolioSitesWrapper.style.height = portfolioSitesWrapper.clientHeight / 2 + 50 + 'px'
+    // portfolioSitesWrapper.style.height = portfolioSitesWrapper.clientHeight / 2 + 50 + 'px'
     
 
 
     setTimeout(() => {
       portfolioSitesWrapper.style.height = portfolioSitesWrapper.clientHeight / 2 + 50 + 'px' 
-    }, 10000);
+    }, 1000);
