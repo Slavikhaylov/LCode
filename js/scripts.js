@@ -124,4 +124,4 @@ var isScrolling = false;
 
     setTimeout(() => {
       portfolioSitesWrapper.style.height = portfolioSitesWrapper.clientHeight / 2 + 50 + 'px' 
-    }, 1000);
+    }, 2000);
