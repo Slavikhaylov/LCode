@@ -83,15 +83,11 @@ var isScrolling = false;
     }
  
     document.addEventListener("DOMContentLoaded", scrolling, false);
- 
-    var listItems = document.querySelectorAll(".our-service"); 
+    
+    var listItems = document.querySelectorAll(".animation")   ; 
     function scrolling(e) {
- 
-
- 
       for (var i = 0; i < listItems.length; i++) {
         var listItem = listItems[i];
- 
         if (isPartiallyVisible(listItem)) {
           listItem.classList.add("active_1");
         } else {
@@ -118,3 +114,10 @@ var isScrolling = false;
  
       return ((top >= 0) && (bottom <= window.innerHeight));
     }
+
+
+let portfolioSitesWrapper =  document.querySelector('.portfolio-sites-2')
+
+
+portfolioSitesWrapper.style.height = portfolioSitesWrapper.clientHeight / 2 + 50 + 'px' 
+ 
