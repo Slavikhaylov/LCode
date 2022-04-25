@@ -115,11 +115,13 @@ var isScrolling = false;
       return ((top >= 0) && (bottom <= window.innerHeight));
     }
 
-setTimeout(() => {
-  let portfolioSitesWrapper =  document.querySelector('.portfolio-sites-2')
-  
-  
-  portfolioSitesWrapper.style.height = portfolioSitesWrapper.clientHeight / 2 + 50 + 'px' 
-   
-  
-}, 500);
+
+    
+    let portfolioSitesWrapper =  document.querySelector('.portfolio-sites-2')
+    portfolioSitesWrapper.style.height = portfolioSitesWrapper.clientHeight / 2 + 50 + 'px'
+    
+
+
+    setTimeout(() => {
+      portfolioSitesWrapper.style.height = portfolioSitesWrapper.clientHeight / 2 + 50 + 'px' 
+    }, 5000);
