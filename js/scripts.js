@@ -126,7 +126,7 @@ var isScrolling = false;
     
     
     
-    document.addEventListener("DOMContentLoaded", function (e) {
+    window.addEventListener("load", function (e) {
       portfolioSitesWrapper.style.height = portfolioSitesWrapper.clientHeight / 2 + 50 + 'px' 
 
       
