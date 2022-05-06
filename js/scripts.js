@@ -131,3 +131,19 @@ var isScrolling = false;
 
       
     })
+    
+    function scroll(el,locale){
+      el.addEventListener('click', function(e){
+          e.preventDefault()
+          const blockID = el.getAttribute('href')
+          document.querySelector(''+blockID).scrollIntoView({behavior:'smooth',block:locale})
+      
+  })
+  }
+  document.querySelectorAll('.scroll-top').forEach(el=>{
+      scroll(el,'start')
+  })
+  document.querySelectorAll('.scroll').forEach(el=>{
+      scroll(el,'center')
+  
+  })

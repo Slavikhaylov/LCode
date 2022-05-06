@@ -1030,6 +1030,9 @@ footer{
 
 
 @media(min-width:1700px){
+    .nav-link{
+        font-size: 22px;
+    }
     .container{
         max-width: 1620px;
     }
@@ -1581,6 +1584,9 @@ footer{
 
 }
 .footer-links {
+    display: flex;
+    flex-direction: column;
+    
     order: 1;
     width: 80%;
     margin-top: 10px;
