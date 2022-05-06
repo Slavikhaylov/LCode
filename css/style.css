@@ -1216,6 +1216,13 @@ footer {
 }
 
 @media (max-width: 1250px) {
+  .our-business-swiper {
+    left: 20px;
+    right: 20px;
+  }
+  #why-us {
+    padding: 0;
+  }
   .container {
     margin: 0 20px;
   }
@@ -1573,6 +1580,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .our-service_item:nth-child(even) {
     margin-top: 0;
